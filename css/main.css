@@ -1,0 +1,117 @@
+.wrapper{
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.42857143;
+    -webkit-font-smoothing: antialiased;
+    color: #32328b;
+    background-color: #e4e4e7;
+    font-family: Space Grotesk,Arial,sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: block;
+    min-height: 100%;
+    height: auto;
+    margin-bottom: -348px;
+    padding-top: 20px;
+    padding-bottom: 348px;
+    
+}
+
+.topic{
+padding-bottom: 20px;
+border-bottom-style: solid;
+border-color: #c8c8ca;    
+border-width: 1pt;
+margin-bottom: 30px;
+text-align: center;
+
+}
+.head-title{
+    text-shadow: 2px 2px #a1a1a1;
+}
+.page-container{
+    max-width: 900px;
+    margin:auto;
+    border: 2px black;
+    
+}
+.control-container{
+margin-bottom: -20pt;
+}
+
+.sub{
+    margin-left: 20px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.input-text{
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+    width: 100%;
+}
+.button-round{
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border-color: #48484a;
+    background-color: #48484a;
+    cursor: pointer;
+    text-align: center;
+ 
+}
+.button-round:hover {
+    background-color: #88888b; 
+    border-color:#88888b
+}
+.widget-switch{
+    margin-top: 20px;
+}
+.column-container{
+margin-top: 50px;
+display: flex;
+
+/* flex-direction: row; */
+align-items: stretch;
+justify-content: space-between;
+max-width: 1200px;
+/* margin-left: auto; */
+margin-right: auto;
+
+}
+
+.column1{
+   
+    border: 1px solid;
+    border-color: black;
+    box-shadow: 5px 3px #cecdcd;
+    
+padding: 4pt;
+
+/* flex-direction: column;
+justify-content: space-between; */
+margin: 1%;
+width: 100%;
+overflow-y: hidden;
+flex-basis: 100%;
+}
+/* .column2{
+  
+border-style: solid;
+border-color: red;
+    
+padding: 4pt;
+
+flex-direction: column;
+justify-content: space-between;
+margin: 1%;
+width: 47%;
+overflow-y: hidden;
+} */
+.horizontal{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.info-block{
+    margin-left: 15px;
+}

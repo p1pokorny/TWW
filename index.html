@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Předpověd počasí</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <main class="wrapper">
+            <div class="topic">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="head-title">Předpověd počasí</h1> <!-- TODO BG(color, margin padding) -->
+                        </div>
+                        
+                    </div>
+                </div>   
+            </div>
+
+
+            <div>
+                <div class="widget">
+                    <div class="page-container">
+                        <div class="control-container row">
+                            <div class="search-block col-6">
+                                <div  class="search row">
+                                    <div class="search-container col-sm-6">
+                                        <input type="text" id="myInput" placeholder="Search city" class="input-text">
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="submit" class="button-round dark">Search</button>    
+                                    </div>
+                                </div>
+                                <div class="sub not-found" >
+                                    Not found. To make search more precise put the city's name, comma, 2-letter country code (ISO3166). You will get all proper cities in chosen country.
+                                </div>
+                            </div>
+                            <div class="wiget-diff-container col-4">
+                                <div class="widget-switch">
+                                    <div class="switch">
+                                        <input type="radio" name="units_switcher" id="met" class="switch-input" value="metric" checked="checked">
+                                        <label for="metric" class="left">Metric: °C, m/s</label><br>
+                                        <input type="radio" name="units_switcher" id="imp" class="switch-input switch-input-2" value="imperial">
+                                        <label for="imperial" class="right">Imperial: °F, mph</label><span class="switch-selection"></span>
+                                    </div>
+                                </div>
+                            
+                                <!-- <span class="different-data">Different Weather?</span></div> -->
+                            </div>
+                        </div>
+                        
+                        <div class="column-container">
+                            <div class="column1">
+                                <div class="current-container">
+                                    <div class="location-block">
+                                           
+                                          
+                                        <h3 id="lokace"><img src="./img/geo-location-icon.jpg" id="map-marker" alt="map-marker" width="25" height="25" style="visibility: hidden;">
+                                        </h3>
+                                    </div>
+                                    <div  class="time"></div>
+
+                                    <div  class="horizontal" style="justify-content: flex-start; font-weight: bold;">
+                                        <span id="descr"></span>
+                                    </div>
+                                    <div  style="display: flex; justify-content: flex-start; align-items: center; margin-top: 0px; 
+                                    margin-bottom: 10px;">
+                                        <img  src="" class="weather-icon">
+                                        <span  class="heading"></span> 
+                                    </div>
+                                    <div  class="info-block">
+                                        
+                                    </div>
+                                    
+                                    <ul  class="weather-items">
+                                        <li>
+                                            <div class="wind-line"></div>
+                                                
+                                        </li>
+                                        <li id="pres"><span class="symbol"></span></li>
+                                        <li id="hum"><span class="symbol"></span></li>
+                                        <!-- <li id="UV"><span class="symbol">UV:</span>7.35</li>
+                                        <li id="DewP"><span class="symbol">Dew point:</span>15.06°C</li> -->
+                                        <li id="Vis"><span class="symbol"></span></li>
+                                        <li id="sunR"><span class="symbol"></span></li>
+                                        <li id="sunS"><span class="symbol"></span></li>
+                                       
+                                    </ul>
+                                </div>
+                         
+                            </div>
+                            <!-- <div class="column2">
+
+                            </div> -->
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </main>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/main.js" async defer></script>  
+        <script src="js/jquery-dateFormat.js" async defer></script>
+    </body>
+</html>
